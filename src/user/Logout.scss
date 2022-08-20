@@ -1,0 +1,44 @@
+.logout{
+    display: flex;
+    height:60px;
+
+    &__form{
+        display: grid;
+        grid-template-columns: 250px 60px;
+        grid-template-rows: 20px 30px;
+        grid-template-areas: 
+        "title btn"
+        "name btn"
+        ;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__title{
+        grid-area: title;
+        display: flex;
+        font-size: 14px;
+    }
+
+    &__name{
+        grid-area: name;
+        display: flex;
+        padding-left: 80px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+        font-style: italic;
+
+    }
+
+    &__btn{
+        grid-area:btn;
+        display: flex;
+        height: 25px;
+        outline: none;
+        border:none;
+        border-radius: 2px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+}
